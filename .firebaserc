@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "ipigetsemani-2019"
-  }
+  },
+  "targets": {
+    "ipigetsemani-2019": {
+      "hosting": {
+        "portal": [
+          "ipigg-portal"
+        ],
+        "transmissao": [
+          "transmissao"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
