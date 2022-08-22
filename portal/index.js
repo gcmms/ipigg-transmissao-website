@@ -21,8 +21,7 @@ async function teste() {
 	const remoteConfig = getRemoteConfig();
 	remoteConfig.settings.minimumFetchIntervalMillis = 3600000;
 	remoteConfig.defaultConfig = {
-	  "helloword" : "Erro",
-	  "aoVivoAgora": "Xy1N-jyU3tk"
+		"portalIframe" : "https://www.instagram.com/ipigetsemani/"
 	};
 
 	const loadEl = document.querySelector('#load');
@@ -32,10 +31,9 @@ async function teste() {
 		let hello = getValue(remoteConfig, "helloword").asString();
 		loadEl.textContent = hello
 
-		let aoVivo = getValue(remoteConfig, "aoVivoAgora").asString();
+		let portalSrc = getValue(remoteConfig, "portalIframe").asString();
 		const iframe = document.getElementById('iframeYoutube');
-		iframe.src = "https://www.youtube.com/embed/" + aoVivo;
-		//iframe.src = "https://linkr.bio/ipigetsemani";
+		iframe.src = portalSrc;
 	  })
 	  .catch((err) => {
 	    console.log(err);
