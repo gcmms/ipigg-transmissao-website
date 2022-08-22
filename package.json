@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.9.3"
+  }
+}
